@@ -1,21 +1,24 @@
 <script>
 var figure = prompt("Enter your input");
-if (figure == "circle") {
-    var radius = prompt("Enter the radius");
+if (figure == "circle" || "CIRCLE") {
+    var radius = prompt("Enter the radius").toUpperCase;
     document.write(3.14*radius**2);
 }
-else if (figure == "rectangle") {
+else if (figure == "rectangle" || "RECTANGLE") {
     var length = prompt("Enter the length");
     var breadth = prompt("Enter the breadth");
     document.write(length*breadth);
 }
-else if (figure == "square") {
+else if (figure == "square" || "SQUARE") {
     var side = prompt("Enter the sides");
     document.write(side*side);
 }
-else if (figure == "triangle"){
+else if (figure == "triangle" || "TRIANGLE"){
     var base = prompt("Enter the base");
     var height = prompt("Enter the height");
     document.write(0.5*base*height);
+}
+else {
+    alert("Incorrect Shape")
 }
 </script>
